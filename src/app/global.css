@@ -1,0 +1,104 @@
+/* --- GLOBAL STYLING (Din befintliga kod flyttad hit) --- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  color: white;
+  padding: 10px;
+}
+
+.card, .chart {
+  background-color: rgb(31, 31, 32);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white;
+  margin: 0.5em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-height: 110px;
+}
+
+.label {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: rgb(92, 75, 153);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TRANSACTION LIST STYLING */
+.transaction-container { display: flex; flex-direction: column; gap: 12px; padding: 10px; }
+.transaction-item {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 16px; background: rgba(255, 255, 255, 0.05); border-radius: 12px;
+}
+.item-left { display: flex; align-items: center; gap: 15px; }
+.icon-circle { width: 45px; height: 45px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 20px; }
+.item-description { font-weight: 600; }
+.item-sub { opacity: 0.7; font-size: 0.78em; }
+.item-amount { font-weight: 700; }
+.delete-btn { background: none; border: none; cursor: pointer; font-size: 1.2rem; }
+
+/* MODAL */
+.modal { position: fixed; inset: 0; background: rgba(0, 0, 0, 0.7); display: flex; justify-content: center; align-items: center; z-index: 1000; }
+.modal-content { width: 90%; max-width: 420px; background: #1f1f20; border-radius: 16px; padding: 20px; display: flex; flex-direction: column; gap: 12px; }
+.modal-content input { padding: 12px; border-radius: 10px; border: none; background: #2a2a2c; color: white; }
+.categories { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.cat { width: 30%; padding: 10px; border-radius: 10px; border: none; background: #2a2a2c; color: white; cursor: pointer; display: flex; flex-direction: column; align-items: center; }
+.cat.active { background: #5c4bd9; }
+.button-container { display: flex; gap: 10px; }
+.button-container button { flex: 1; padding: 10px; border-radius: 10px; border: none; cursor: pointer; font-weight: bold; }
+
+/* --- TABLET & DESKTOP LAYOUT (Här händer magin) --- */
+@media (min-width: 768px) {
+  .app-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Skapar två kolumner: Graf till vänster, Transaktioner till höger */
+  .main-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr; 
+    gap: 20px;
+    align-items: start;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
