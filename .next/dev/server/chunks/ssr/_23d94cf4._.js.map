@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/immasayey/Desktop/OptiSpend/src/app/layout.js"],"sourcesContent":["import {ExpensesProvider} from \"./context/\"\nimport \"./globals.css\";\n\n\nexport default function RootLayout({ children }) {\n  return (\n    <html>\n        {children}\n    </html>\n  );\n}\n"],"names":[],"mappings":";;;;;;;;;;;;;AAIe,SAAS,WAAW,EAAE,QAAQ,EAAE;IAC7C,qBACE,8OAAC;kBACI;;;;;;AAGT"}},
-    {"offset": {"line": 30, "column": 0}, "map": {"version":3,"sources":["file:///Users/immasayey/Desktop/OptiSpend/node_modules/next/src/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.ts"],"sourcesContent":["module.exports = (\n  require('../../module.compiled') as typeof import('../../module.compiled')\n).vendored['react-rsc']!.ReactJsxDevRuntime\n"],"names":["module","exports","require","vendored","ReactJsxDevRuntime"],"mappings":"AAAAA,OAAOC,OAAO,GACZC,QAAQ,4HACRC,QAAQ,CAAC,YAAY,CAAEC,kBAAkB","ignoreList":[0]}}]
-}
