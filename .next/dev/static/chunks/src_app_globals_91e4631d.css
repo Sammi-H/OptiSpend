@@ -1,0 +1,200 @@
+/* [project]/src/app/globals.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  color: #fff;
+  background-color: #000;
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+.card, .chart {
+  color: #fff;
+  background-color: #1f1f20;
+  border-radius: 12px;
+  margin: .5em;
+  padding: 20px;
+  box-shadow: 0 4px 10px #0000001a;
+}
+
+.card {
+  flex-direction: column;
+  min-height: 110px;
+  display: flex;
+}
+
+.label {
+  color: #6b7280;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.value {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn {
+  cursor: pointer;
+  color: #fff;
+  background-color: #5c4b99;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.row {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  display: flex;
+}
+
+.transaction-container {
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+  display: flex;
+}
+
+.transaction-item {
+  background: #ffffff0d;
+  border-radius: 12px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  display: flex;
+}
+
+.item-left {
+  align-items: center;
+  gap: 15px;
+  display: flex;
+}
+
+.icon-circle {
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  font-size: 20px;
+  display: flex;
+}
+
+.item-description {
+  font-weight: 600;
+}
+
+.item-sub {
+  opacity: .7;
+  font-size: .78em;
+}
+
+.item-amount {
+  font-weight: 700;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+}
+
+.modal {
+  z-index: 1000;
+  background: #000000b3;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.modal-content {
+  background: #1f1f20;
+  border-radius: 16px;
+  flex-direction: column;
+  gap: 12px;
+  width: 90%;
+  max-width: 420px;
+  padding: 20px;
+  display: flex;
+}
+
+.modal-content input {
+  color: #fff;
+  background: #2a2a2c;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.categories {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  display: flex;
+}
+
+.cat {
+  color: #fff;
+  cursor: pointer;
+  background: #2a2a2c;
+  border: none;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding: 10px;
+  display: flex;
+}
+
+.cat.active {
+  background: #5c4bd9;
+}
+
+.button-container {
+  gap: 10px;
+  display: flex;
+}
+
+.button-container button {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  flex: 1;
+  padding: 10px;
+  font-weight: bold;
+}
+
+@media (min-width: 768px) {
+  .app-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .main-grid {
+    grid-template-columns: 1.5fr 1fr;
+    align-items: start;
+    gap: 20px;
+    display: grid;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+}
+
+/*# sourceMappingURL=src_app_globals_91e4631d.css.map*/
