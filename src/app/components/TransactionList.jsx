@@ -24,7 +24,7 @@ export default function TransactionList() {
       <div className="transaction-container">
         {/* Om listan är tom, visa meddelande */}
         {expenses.length === 0 && (
-          <p className="empty-msg" style={{ color: "grey", padding: "10px" }}>
+          <p className="empty-msg" style={{ textAlign:"center", color: "grey", padding: "10px" }}>
             No transactions yet.
           </p>
         )}
