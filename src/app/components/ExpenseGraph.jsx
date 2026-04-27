@@ -26,7 +26,7 @@ export default function ExpenseGraph({ expenses }) {
   if (expenses.length === 0) {
     return (
       <div className="chart">
-        <h3>Daily Expensess</h3>
+        <h3>Daily Expenses</h3>
         <p style={{ color: "grey", textAlign: "center", padding: "20px" }}>
           No expenses yet.
         </p>
